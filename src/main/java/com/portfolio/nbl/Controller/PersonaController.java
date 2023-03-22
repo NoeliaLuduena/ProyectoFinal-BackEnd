@@ -33,7 +33,7 @@ public class PersonaController {
         return new ResponseEntity(list, HttpStatus.OK);
     }
 
-    @PostMapping("/personas/crear")
+    @PostMapping("/crear")
     public String createPersona(@RequestBody Persona persona) {
         personaService.save(persona);
         return "la persona fue creada correctamente";
